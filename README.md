@@ -16,7 +16,7 @@ For more details about famous temples of TamilNadu
 
 ### INSTALL and RUN
 
-  THis code base will be available in the Github. go the Repo and download the zip file extract it and reun the **index.html** in your browser. Also get through the java script and css files.....
+  THis code base will be available in the Github. go the Repo (https://rakesh-06.github.io/tamilnaduTemplesMap/) and download the zip file extract it and reun the **index.html** in your browser. Also get through the java script and css files.....
 
 
 ### Libraries used :
