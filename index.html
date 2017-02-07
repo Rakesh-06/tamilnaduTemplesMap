@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Barrio|Kaushan+Script|Pacifico|Righteous" rel="stylesheet">
+    <style>
+    body,html{font-family:Barrio,cursive;height:100%;width:100%;background-color:#79BDB2}.container{height:100%;position:relative}.title-block{margin:2%;padding:10px;background-color:#EB9A67}.map-title{background-color:#E9E794;color:#9E2138;font-size:45px;font-style:italic;text-decoration:underline;text-shadow:1.5px 1.5px #1DF6EC;cursor:default}.top-logo{border:5px solid #FFF;box-shadow:3px 3px 15px #7DCA07}.options-box{margin:2%;padding:10px;border:5px solid #FF0101;border-radius:5px;line-height:35px;background-color:#F6D6F3}input,label{font-family:Righteous,cursive;color:#B20707;font-size:16px;font-style:italic;text-align:center}#list{font-family:Pacifico,cursive;cursor:pointer}.temple-names{font-size:18px;font-weight:bolder;text-shadow:2px 2px #F4F706;color:#2E15DF;list-style:square}#map{height:100%;margin:2%;border:5px solid #FFF;border-radius:5px}#pano{width:200px;height:200px;background-color:#F4F706}@media screen and (max-width:540px){.container{background-color:#C29540}.map-title{font-family:'Kaushan Script',cursive;font-size:25px;color:#000;background-color:#B8EC9A;text-shadow:1.5px 1.5px #FFF}.top-logo{box-shadow:1.5px 1.5px 13px #FFF}.title-block{background-color:#7DC1A4}.options-box{background-color:#B8EC9A}.temple-names{color:#000;font-size:12px;list-style:disc}#map{border:2px solid #FF4747}}@media screen and (min-width:536px) and (max-width:993px){body,html{background-color:#EB5858}.map-title{font-family:Righteous,cursive}.title-block{background-color:#BFA673}.options-box{background-color:#C6CE4E}}
+    </style>      //Inlining css in html as used in WEb-optimization project....
+
+    <title>Neighbhorhood MAP done by RAKESH</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row title-block">
+        <div class="col-md-4">
+          <img class="top-logo img-responsive" src="imgs/heading-logo-min.jpg" alt="Tamilnadu Tourism logo">
+        </div>
+        <div class="col-md-8">
+          <span class="map-title text-uppercase"> Famous 'N' Important Temples in Tamilnadu </span>
+        </div>
+      </div>
+
+      <div class="row options-box">
+        <div class="col-md-12">
+          <label>Filter Temple:</label>
+          <input type="text" placeholder="Type here to Filter..." data-bind="textInput: filterInput" value="">
+          <div id="list">
+            <ul class="temple-names"data-bind="foreach: filterTemple">
+              <li data-bind="text: title, click: $parent.clickOver"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row col-md-12" id="map"></div>
+    </div>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlTlQWZ5FsItbmeljvV78TwQg_QFQiBIk&libraries=geometry&callback=initMap" onerror="googleError()"></script>
+    <script type="text/javascript" src="js/library/jquery-3.1.1.min.js"></script>
+    <script src="js/library/knockout-3.4.1.js"></script>
+    <script src="js/main.min.js"></script>
+
+  </body>
+
+</html>

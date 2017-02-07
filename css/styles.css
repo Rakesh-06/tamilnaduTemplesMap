@@ -1,0 +1,130 @@
+html,
+body {
+  font-family: 'Barrio', cursive;
+  height: 100%;
+  width: 100%;
+  background-color: #79BDB2;
+}
+
+.container {
+  height: 100%;
+  position: relative;
+}
+
+.title-block {
+  margin: 2%;
+  padding: 10px;
+  background-color: #EB9A67;
+}
+.map-title {
+  background-color: #E9E794;
+  color: #9E2138;
+  font-size: 45px;
+  font-style: italic;
+  text-decoration: underline;
+  text-shadow: 1.5px 1.5px #1DF6EC;
+  cursor: default;
+}
+
+.top-logo {
+  border: 5px solid #FFFFFF;
+  box-shadow: 3px 3px 15px #7DCA07;
+}
+
+.options-box {
+  margin: 2%;
+  padding: 10px;
+  border: 5px solid #FF0101;
+  border-radius: 5px;
+  line-height: 35px;
+  background-color: #F6D6F3;
+}
+
+label,
+input {
+  font-family: 'Righteous', cursive;
+  color: #B20707;
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+}
+
+#list {
+  font-family: 'Pacifico', cursive;
+  cursor: pointer;
+}
+
+.temple-names {
+  font-size: 18px;
+  font-weight: bolder;
+  text-shadow: 2px 2px #F4F706;
+  color: #2E15DF;
+  list-style: square;
+
+}
+
+#map {
+  height: 100%;
+  margin: 2%;
+  border: 5px solid #FFFFFF;
+  border-radius: 5px;
+}
+
+#pano {
+  width: 200px;
+  height: 200px;
+  background-color: #F4F706;
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    background-color: #C29540;
+  }
+  .map-title {
+    font-family: 'Kaushan Script',cursive;
+    font-size: 25px;
+    color: #000000;
+    background-color: #B8EC9A;
+    text-shadow: 1.5px 1.5px #FFFFFF;
+  }
+
+  .top-logo {
+    box-shadow: 1.5px 1.5px 13px #FFFFFF;
+  }
+
+  .title-block {
+    background-color: #7DC1A4;
+  }
+
+  .options-box {
+    background-color: #B8EC9A;
+  }
+
+  .temple-names {
+    color: #000000;
+    font-size: 12px;
+    list-style: disc;
+  }
+
+  #map {
+    border: 2px solid #FF4747;
+  }
+}
+
+
+@media screen and (min-width: 536px) and (max-width: 993px) {
+  html,
+  body{
+    background-color: #EB5858;
+  }
+  .map-title {
+    font-family: 'Righteous',cursive;
+  }
+  .title-block {
+    background-color: #BFA673;
+  }
+
+  .options-box {
+    background-color: #C6CE4E;
+  }
+}
